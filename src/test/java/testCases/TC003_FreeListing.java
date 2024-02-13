@@ -11,7 +11,7 @@ import pageObjects.GymandSearchPage;
 
 public class TC003_FreeListing extends TC002_SearchandFind{
 	
-	@Test(priority=6,groups= {"regression","master"})
+	@Test(priority=5,groups= {"regression","master"})
 	public void clickfreelisting() throws InterruptedException, IOException {
 		if(!driver.getTitle().equals("AskLaila Bangalore - India's local information service.")) {
 			driver.navigate().back();
@@ -22,7 +22,7 @@ public class TC003_FreeListing extends TC002_SearchandFind{
 		
 	}
 	
-	@Test(priority=7)
+	@Test(priority=6,groups= {"regression","master"})
 	public void freeListingLogin() throws InterruptedException, IOException {
 		FreeListingPage fp = new FreeListingPage(driver);
 		ScreenShots sc = new ScreenShots(driver);

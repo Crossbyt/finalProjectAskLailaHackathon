@@ -24,7 +24,6 @@ public class TC002_SearchandFind extends TC001_Location{
 		CarWashPage cp = new CarWashPage(driver);
 		ScreenShots sc = new ScreenShots(driver);
 		Thread.sleep(3000);
-//		sc.screenshot("CarWashPage.png");
 		cp.displayDetails();
 		logger.info("--//Top 5 car wash services displyed//--");
 		cp.writeReview();
@@ -41,20 +40,6 @@ public class TC002_SearchandFind extends TC001_Location{
 		Thread.sleep(3000);
 	}
 	
-//	@Test(priority=5,groups= {"regression","master"})
-//	public void shareDetails() throws InterruptedException, IOException {
-//		CarWashPage cp = new CarWashPage(driver);
-//		cp.shareFB();
-//		cp.shareTwitter();
-//		cp.reportButton();
-//		logger.info("--//Shared and Reported//--");
-//		driver.navigate().back();
-//		Thread.sleep(3000);
-//		if(!driver.getTitle().equals("AskLaila Bangalore - India's local information service.")) {
-//			driver.navigate().back();
-//		}
-//		navigateBack();
-//		cp.clickBack();
-//	}
+
 
 }
